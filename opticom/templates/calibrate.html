@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Calibrate Your Eye Tracking</h2>
+    <form method="post" action="/calibrate">
+        <label for="iris">Iris Data:</label>
+        <input type="text" id="iris" name="iris" placeholder="e.g., [[0.5, 0.3], [0.6, 0.4]]">
+        <br>
+        <label for="screen">Screen Data:</label>
+        <input type="text" id="screen" name="screen" placeholder="e.g., [[100, 200], [300, 400]]">
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}
