@@ -8,13 +8,14 @@ a mashup of eye tracking and aac board front end for non-verbal communication
 
 2. FOCUS FILES
     salaman.py 
-        is a simple gaze controlled cursor program without utilising an ANN like MLP
+        a simple gaze controlled cursor program without utilising an ANN like MLP
 
     Opticom/Gazer.py    
-        is implements MLP
-        if it doesnnt detect a training data file, you may start calibration
+        implements MLP
+        if it doesn't detect a training data file(e.g. calibration_data.pkl), you may start calibration
 
         CALIBRATION
+           while the window of your face is in view,
             use the mouse and place the cursor at multiple positions on the screen
             for each position, keep your head still, and look at the mouse, then press 'c'
             in the terminal, the coordinates of your iris and mouse will be displayed
