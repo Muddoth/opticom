@@ -99,7 +99,7 @@ while True:
                 screen_coords = model.predict([[input_x, input_y]])[0]
                 mouse_x = screen_coords[0] * screen_w
                 mouse_y = screen_coords[1] * screen_h
-                #pyautogui.moveTo(screen_x, screen_y)  
+                pyautogui.moveTo(mouse_x, mouse_y)  
                 print(f"Iris ({input_x}, {input_y}), Mouse ({mouse_x}, {mouse_y})")    
 
 
@@ -112,7 +112,7 @@ while True:
             cv2.circle(frame, (x, y), 3, (0, 255, 255), -1)
 
         if (left[0].y - left[1].y) < 0.004:
-            #pyautogui.click()
+            pyautogui.click()
             pyautogui.sleep(1)
 
     cv2.imshow('Opticom', frame)
