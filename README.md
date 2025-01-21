@@ -7,10 +7,10 @@ a mashup of eye tracking and aac board front end for non-verbal communication
         write myenv/Scripts/activate in terminal
 
 2. FOCUS FILES
-    salaman.py 
+    a. salaman.py 
         a simple gaze controlled cursor program without utilising an ANN like MLP
 
-    Opticom/Gazer.py    
+    b. Opticom/Gazer.py    
         implements MLP
         if it doesn't detect a training data file(e.g. calibration_data.pkl), you may start calibration
 
